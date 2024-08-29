@@ -1,9 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Navigation from '../components/navigation.astro';
+import Footer from '../components/footer.astro';
+import Header from '../components/header.astro';
+import Hamburger from '../components/hamburger.astro';
+import '../styles/global.css';
+const pageTitle = "James MB 👋";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title= {pageTitle}>
 	<main>
 		<svg
 			class="astro-a"
@@ -33,7 +39,8 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<Header />
+		<h1>Hi, my name is <span class="text-gradient">James</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -60,6 +67,13 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+		<Footer />
+		<!-- this script isnt working as expected, it's not toggling the hamburger navigation open on click? but then the hamburger isnt showing at all so its probbaly to do with that -->
+		<script>
+			document.querySelector('.hamburger')?.addEventListener('click', () => {
+			  document.querySelector('.nav-links')?.classList.toggle('expanded');
+			});
+		  </script>
 	</main>
 </Layout>
 
