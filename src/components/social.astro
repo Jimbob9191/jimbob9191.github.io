@@ -1,5 +1,5 @@
 ---
-const { platform, username } = Astro.props;
+const { platform, username, info } = Astro.props;
 
 ---
-<a href={`https://www.${platform}.com/${username}`} class="footerlink">{platform}</a>
+<div class="social-link"><a href={`https://www.${platform}.com/${username}`} class="body">{platform}</a>{info}</div>
