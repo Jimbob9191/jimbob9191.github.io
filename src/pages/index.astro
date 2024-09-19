@@ -2,15 +2,22 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/header.astro';
 import Social from '../components/social.astro';
+import Projectcard from '../components/projectcard.astro';
+import Hero from '../components/hero.astro';
 
 import '../styles/global.css';
 
 const pageTitle = "James MB 👋";
 ---
 
+</style>	
+
+
 <Layout title= {pageTitle}>
 	<main>
+		
 		<Header />
+		<Hero />
 		<div>
 			<h1 class="h1">Hi, my name is <span class="text-gradient">James</span></h1>
 			<button class="button-medium">Hello</button>
@@ -29,5 +36,10 @@ const pageTitle = "James MB 👋";
 				<Social platform="Strava" username="/athletes/81364005" />
 			</div>
 		</div>
+		<div>
+			<h4 class="h4">Projects</h4>
+			<Projectcard />
+		</div>
+		
 	</main>
 </Layout>
