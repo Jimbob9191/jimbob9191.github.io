@@ -4,10 +4,16 @@ import Header from '../components/header.astro';
 import Social from '../components/social.astro';
 import Projectcard from '../components/projectcard.astro';
 import Hero from '../components/hero.astro';
+import Blockheader from '../components/blockheader.astro';
+import Footer from '../components/footer.astro';
+
+
 
 import '../styles/global.css';
 
+
 const pageTitle = "James MB 👋";
+
 ---
 
 </style>	
@@ -17,29 +23,24 @@ const pageTitle = "James MB 👋";
 	<main>
 		
 		<Header />
-		<Hero />
+		
 		<div>
-			<h1 class="h1">Hi, my name is <span class="text-gradient">James</span></h1>
-			<button class="button-medium">Hello</button>
-			<h4 class="h4">This is some H4 text on the page and it looks like this</h4>
-			<p class="body">Hey, I’m James. I’m a designer and aspiring developer. I’m currently working at <a href="https://www.pavers.co.uk/" class="text-link">Pavers</a> working on a range of internal tools and customer facing brand sites.</p>
-			<p class="body">Before Pavers, I was at coeo, working on internal dashboards, marketing content and customer facing sites.</p>
-			<p class="body">Before coeo, I was studying Graphic Art & Design at Leeds Beckett University.</p>
+			<h1 class="title">Hey! I’m James ✌️</h1>
+			<p class="body">I’m a designer, cyclist, photographer and (sometimes) developer. I’m currently at Pavers working on a range of internal tools and customer facing sites.</p>
+			<p>Prior to Pavers, I worked at coeo, building internal dashboards, crafting marketing content, and designing customer-facing sites. Before that, I completed a degree in Graphic Art & Design at Leeds Beckett University.</p>
 		</div>
+		<hr>
 		<div>
-			<h4 class="h4">Socials</h4>
-			<div>
-				<Social platform="Twitter" username="jmolbr" info="test" />
-				<Social platform="Github" username="Jimbob9191" />
-				<Social platform="Dribbble" username="jamesmolyneuxbirch" />
-				<Social platform="Instagram" username="jamesmolyneuxbirch" />
-				<Social platform="Strava" username="/athletes/81364005" />
-			</div>
+			<Blockheader/>
+			<Projectcard/>
+			<Projectcard/>
+			<Projectcard/>
 		</div>
-		<div>
-			<h4 class="h4">Projects</h4>
-			<Projectcard />
-		</div>
+		<hr>
+		<Footer/>
+
+
+		
 		
 	</main>
 </Layout>

@@ -1,11 +1,39 @@
 ---
 import Social from './social.astro'
+import signature from './public/signature.svg'
 
 ---
 
 <footer class="footer">
-    <Social platform="twitter" username="jmolbr" />
-    <Social platform="github" username="Jimbob9191" />
-    <Social platform="Dribbble" username="jamesmolyneuxbirch" />
-    <Social platform="Instagram" username="jamesmolyneuxbirch" />
+
+    <div>
+    <p class="title-small">Information</p>
+    <al>
+        <li class="body-small">Projects</li>
+        <li class="body-small">Photos</li>
+        <li class="body-small">Contact</li>
+        <li class="body-small">About</li>
+    </al>
+    </div> 
+
+
+    <div>
+    <p class="title-small">Social</p>
+    <al>
+        <li class="body-small">Instagram</li>
+        <li class="body-small">Linkedin</li>
+        <li class="body-small">Strava</li>
+        <li class="body-small">Dribbble</li>
+    </al>
+    </div>
+    <hr>
+    <div>
+
+    <img
+    src="signature.svg"
+    alt="test"
+    height="100"
+    width="100"
+    />
+</div>
 </footer>
