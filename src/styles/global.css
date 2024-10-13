@@ -193,7 +193,7 @@ hr {
   margin-bottom: 0;
 
   background-image: var(--accent-gradient);
- 
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 120%;
   background-position: 0%;
@@ -418,7 +418,7 @@ margin-bottom: 3rem;
   border-radius: 0.5rem;
   border-width: 1px;
   border-style: solid;
-
+  margin-right: 1rem;
 }
 
 
@@ -450,7 +450,7 @@ margin-bottom: 3rem;
 
 	.text-gradient {
 		background-image: var(--accent-gradient);
-
+		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
@@ -493,7 +493,7 @@ margin-bottom: 3rem;
 
 	.text-gradient {
 		background-image: var(--accent-gradient);
-
+		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
