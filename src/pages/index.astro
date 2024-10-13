@@ -1,11 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header.astro';
+
 import Social from '../components/social.astro';
 import Projectcard from '../components/projectcard.astro';
 import Hero from '../components/hero.astro';
 import Blockheader from '../components/blockheader.astro';
 import Footer from '../components/footer.astro';
+import Navigation from '../components/Navigation.astro'
+
+
 
 
 
@@ -18,10 +21,10 @@ const pageTitle = "James MB 👋";
 
 <Layout title= {pageTitle}>
 	<main>
-		<Header />
+		<Navigation />
 		<div class="page-header">
 			<h1 class="title">Hey! I’m James ✌️</h1>
-			<p class="body">I’m a designer, cyclist, photographer and (sometimes) developer. I’m currently at Pavers working on a range of internal tools and customer facing sites.</p>
+			<p class="body">I’m a designer, cyclist, photographer and (sometimes) developer. I’m currently at <a href="https://www.pavers.co.uk/">Pavers</a> working on a range of internal tools and customer facing sites.</p>
 			<p class="body">Prior to Pavers, I worked at coeo, building internal dashboards, crafting marketing content, and designing customer-facing sites. Before that, I completed a degree in Graphic Art & Design at Leeds Beckett University.</p>
 		</div>
 		<hr>

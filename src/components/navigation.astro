@@ -1,8 +1,39 @@
 ---
-
+import { Astronav, MenuItems, MenuIcon, OpenIcon, CloseIcon } from "astro-navbar";
 ---
 
-<div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/blog/">Blog</a>
+<div>
+  <Astronav>
+    <div class="navigation">
+      <a class="navigation-logo">My Logo</a>
+      <MenuIcon>
+        <OpenIcon>Menu</OpenIcon>
+        <CloseIcon>Close</CloseIcon>
+      </MenuIcon>
+    </div>
+    <MenuItems class="hidden">
+        <div class="navigation-dropdown"> <ul>
+            <div class="footer-link-blocks">
+                <div class="footer-link-block">
+                    <p class="title-footer">Information</p>
+                    <div>
+                        <div><a href="" class="body-small">Projects</a></div>
+                        <div><a href="" class="body-small">Photos</a></div>
+                        <div><a href="" class="body-small">Contact</a></div>
+                        <div><a href="" class="body-small">About</a></div>
+                    </div>
+                </div> 
+                <div class="footer-link-block">
+                    <p class="title-footer">Social</p>
+                    <div>
+                         <div><a href="" class="instagram-link">Instagram</a></div>
+                         <div><a href="" class="linkedin-link">Linkedin</a></div>
+                         <div><a href="" class="strava-link">Strava</a></div>
+                         <div></div><a href="" class="dribbble-link">Dribbble</a></div>
+                </div>
+            </div>
+        </div>
+     
+    </MenuItems>
+  </Astronav>
 </div>
