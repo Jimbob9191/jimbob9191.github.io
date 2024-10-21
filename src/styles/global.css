@@ -209,10 +209,9 @@ hr {
 
 
 .project-image {
-  height: 370px;
-  background-color: var(--accent-background);
   border-radius: 0.5rem;
   margin-top: 1.5rem;
+  width: 100%;
 }
 
 .project-details {

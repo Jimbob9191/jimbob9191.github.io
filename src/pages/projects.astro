@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Projectcard from '../components/projectcard.astro';
+import Blockheader from '../components/blockheader.astro';
+import Footer from '../components/footer.astro';
+import Navigation from '../components/header.astro';
+import '../styles/global.css';
+
+
+const pageTitle = "James MB 👋";
+
+---
+
+<Layout title= {pageTitle}>
+	<main>
+		<Navigation />
+		<div class="page-header">
+			<h1 class="title">Projects</h1>
+			<p class="body">Here are some projects I've worked on.</p>
+		</div>
+		<hr>
+
+		<div>
+			<div>
+				<img src="/images/projects/metamask/metamask-alt-cover.png" class="project-image">
+				<div class="project-details">
+					<div class="details-text">
+						<h3 class="title-small"><a href="">MetaMask's Onboarding</a> MetaMask's Onboarding</h3>
+						<p class="body-small">20 April 2024</p>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="/images/projects/metamask/metamask-alt-cover.png" class="project-image">
+				<div class="project-details">
+					<div class="details-text">
+						<h3 class="title-small"><a href="">Steam Store Homepage ⏲ Quick Fix</a>Steam Store Homepage ⏲ Quick Fix</h3>
+						<p class="body-small">20 April 2024</p>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="/images/projects/metamask/metamask-alt-cover.png" class="project-image">
+				<div class="project-details">
+					<div class="details-text">
+						<h3 class="title-small"><a href="">Updating The Jones Bootmaker Website & Online Brand</a>Updating The Jones Bootmaker Website & Online Brand</h3>
+						<p class="body-small">20 April 2024</p>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="/images/projects/metamask/metamask-alt-cover.png" class="project-image">
+				<div class="project-details">
+					<div class="details-text">
+						<h3 class="title-small"><a href="">Redesigning A Client Management Portal</a>Redesigning A Client Management Portal</h3>
+						<p class="body-small">20 April 2024</p>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="/images/projects/metamask/metamask-alt-cover.png" class="project-image">
+				<div class="project-details">
+					<div class="details-text">
+						<h3 class="title-small"><a href="">Redesigning A Payment Portal</a>Redesigning A Payment Portal</h3>
+						<p class="body-small">20 April 2024</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<hr>
+		<Footer/>
+	</main>
+</Layout>
