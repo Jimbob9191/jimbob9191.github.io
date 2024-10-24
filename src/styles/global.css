@@ -120,6 +120,11 @@ hr {
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--text-primary);
+}
+
+.title-small a {
+  color: var(--text-primary);
 }
 
 .title-footer {

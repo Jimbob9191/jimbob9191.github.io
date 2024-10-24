@@ -1,0 +1,77 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Projectcard from '../../components/projectcard.astro';
+import Blockheader from '../../components/blockheader.astro';
+import Footer from '../../components/footer.astro';
+import Navigation from '../../components/header.astro';
+import '../../styles/global.css';
+
+
+const pageTitle = "James MB 👋";
+
+---
+
+<Layout title= {pageTitle}>
+	<main>
+		<Navigation />
+		<div class="page-header">
+			<h1 class="title">MetaMask Onboarding</h1>
+			<p class="body">This is a brief description of the project.</p>
+		</div>
+		<hr>
+
+		<div>
+			<h2 class="title">What is MetaMask?</h2>
+			<p class="body">MetaMask is a software cryptocurrency wallet used to interact with the Ethereum blockchain. It allows users to access their Ethereum wallet through a browser extension or mobile app, which can then be used to interact with decentralised applications. In this instance, I will be focussing on the mobile application available on the App Store.</p>
+
+			<h2 class="title">The Problem</h2>
+			<p class="body">MetaMask has millions of users worldwide and a wide range of features that they can interact with. Upon opening the app for the first time, the user is walked through a short onboarding process in order to set up their wallet. For seasoned crypto enthusiasts this shouldn’t be an issue, but for first timers this can be a little overwhelming or confusing.</p>
+			<p class="body">There are four main steps in the onboarding before the user is directed to the dashboard. </p>
+			<ol>
+				<li class="body">Accept the terms of use.</li>
+				<li class="body">Create a password for your account.</li>
+				<li class="body">Review your recovery phrase.</li>
+				<li class="body">Enter the recovery phrase given to you.</li>
+			</ol>
+			<p class="body">These steps, although brief, will give the user the basic knowledge they need in order to access their account. However the information is presented in an inconsistent and at times confusing format, reducing any trust the user may already have in the platform. </p>
+			<p class="body">As you can see from the images below, there is a lot of variation in the styling of buttons, inputs and typography. Even when the onboarding process is complete and the user is directed to the dashboard, the style of messaging changes once again.</p>
+			<p class="body">Overall, the process feels half hearted and unprofessional. Which isn’t something you want from an application meant for holding your investments. </p>
+			<img src="/images/projects/metamask/metamask-1.png" class="project-image">
+			<img src="/images/projects/metamask/metamask-2.png" class="project-image">
+			<h2 class="title">The Solution</h2>
+			<p class="body">In order to help alleviate some of the issues mentioned above, I did the following:</p>
+			<ul>
+				<li class="body">Set a clear type hierarchy.</li>
+				<li class="body">Consolidate the styling of inputs and buttons.</li>
+				<li class="body">Adjust the colour scheme to inspire trust.</li>
+			</ul>
+			<img src="/images/projects/metamask/metamask-3.png" class="project-image">
+			<img src="/images/projects/metamask/metamask-4.png" class="project-image">
+			<img src="/images/projects/metamask/metamask-5.png" class="project-image">
+			<img src="/images/projects/metamask/metamask-6.png" class="project-image">
+			<img src="/images/projects/metamask/metamask-7.png" class="project-image">
+			<img src="/images/projects/metamask/metamask-8.png" class="project-image">
+
+
+			
+
+			<h3 class="title-small">MetaMask's Onboarding</h3>
+			<p class="body">20 April 2024</p>
+			<p class="body-small">20 April 2024</p>
+			<img src="/images/projects/metamask/metamask-alt-cover.png" class="project-image">
+
+
+
+			
+		</div>
+
+
+
+
+
+
+
+		<hr>
+		<Footer/>
+	</main>
+</Layout>
