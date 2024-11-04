@@ -1,0 +1,97 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Projectcard from '../../components/projectcard.astro';
+import Blockheader from '../../components/blockheader.astro';
+import Footer from '../../components/footer.astro';
+import Navigation from '../../components/header.astro';
+import '../../styles/global.css';
+
+
+const pageTitle = "James MB 👋";
+
+---
+
+<Layout title= {pageTitle}>
+	<main>
+		<Navigation />
+		<div class="page-header">
+			<h1 class="title">Redesigning A Payment Portal - MYCRS</h1>
+			<p class="body"><a href="https://www.paycrs.co.uk/">MYCRS</a> is a payment portal that allows customers to clear debts</p>
+			<img src="/images/projects/mycrs/mycrs-1.png" class="project-image">
+		</div>
+		<hr>
+
+		<div>
+			
+
+			<h2 class="title">Background</h2>
+            <p class="body">MYCRS was originally built for desktop devices with the option of access via mobile. By late 2019 it was obvious that consumers had moved in their masses to mobile devices and the portal would now receive 95% of its traffic from mobile devices.</p>
+			<p class="body">I worked with the web development team to improve the user experience on mobile to take our platform back to a market-leading position as it had been in the past. Taking into account accessibility, customer satisfaction and future expandability.</p>
+            <p class="body">Although CRS offer a range of services, the main process flow of how the business operates is as follows:</p>
+            <ol class="list">
+				<li class="body">The customer buys a product/service and doesn’t want to or can’t pay.</li>
+				<li class="body">The company tries to collect the money, but can’t clear the balance.</li>
+				<li class="body">The company refers the debt to CRS with customer contact.</li>
+				<li class="body">CRS contact the customer through limited, often digital, means to recover the balance in order to take a commission.</li>
+			</ol>
+
+            
+
+
+            <h2 class="title">The Problem</h2>
+            <p class="body">The portal was outdated, last redesigned in 2018 with little to no consideration for accessibility or user experience. The vast majority of the site functioned through javascript and so errors were inevitable no matter the device a user was trying to access the site from. This limited accessibility and the prominence of bugs on the site would often result in negative reviews on platforms such as Google or Trustpilot which would then in turn make a visiting customers impression of CRS worse.</p>
+            <p class="body">The homepage of the site did not include any methods of contact or context for a visiting customer other than a login form requesting 6 different pieces of sensitive information which were usually met with a high degree of scepticism resulting in a bounce rate of over 50%.</p>
+            <p class="body">The culmination of all of these issues was resulting in a loss of profit for the company and an increase in call centre traffic which is exactly what the portal was meant to reduce. Issues included:</p>
+        
+
+            <ul class="list">
+				<li class="body">Lots of bugs</li>
+                <li class="body">Poor navigation</li>
+                <li class="body">Bad accessibility</li>
+                <li class="body">Bounce rates in excess of 50%</li>
+                <li class="body">An unprofessional appearance</li>
+                <li class="body">Causing frustration for customers</li>
+                <li class="body">Loss in potential profit, driving more traffic to the contact centre</li>
+                <li class="body">Negative Trustpilot reviews</li>
+			</ul>
+
+            <img src="/images/projects/mycrs/mycrs-2.jpg" class="project-image">
+
+            <h2 class="title">My Role</h2>
+            <p class="body">As the lead designer, I was tasked with overhauling the site from a design perspective and getting it to a place of security, upon which we could then build. As this portal was the main source of income for the business, i was pushed to make the turnaround for this project as short as possible.</p>
+            <p class="body">My main responsibilities consisted of:</p>
+
+            <ul class="list">
+				<li class="body">Restructuring user flows that were easier to follow</li>
+                <li class="body">Creating user personas</li>
+                <li class="body">Wireframing</li>
+                <li class="body">Tweaking and consolidating the existing design style so it was more consistent and easier to follow for users</li>
+                <li class="body">Heatmapping</li>
+                <li class="body">Designing more prominent and clear visual feedback methods for interactions</li>
+                <li class="body">Streamlining the login process</li>
+                <li class="body">Update the purpose and use of the portal to further reduce overheads of contact centres</li>
+                <li class="body">Designing an interactive FAQ section to help users resolve issues</li>
+                <li class="body">Researching and designing an account management section for users to monitor and update their payment arrangements</li>
+                <li class="body">Designing white label features</li>
+			</ul>
+
+
+            <img src="/images/projects/mycrs/mycrs-3.jpg" class="project-image">
+
+            <h2 class="title">The Solution</h2>
+            <p class="body">After shipping the first iteration of the new portal in October 2021 we saw an immediate decrease in bounce rate of nearly 20%, meaning users were much more trusting of the site from the get-go. We also continued to track payment performance, and users on the new portal were 20% more likely to clear their account in a single payment during their first visit to the site, whilst users setting up a payment arrangement were 50% more likely to make a token payment on the first day.</p>
+            <p class="body">We also received more positive feedback in less subjective ways, including a rapid decline of bug reports from distressed or angry customers and a sharp change in direction when it comes to Trustpilot reviews.</p>
+
+
+            <img src="/images/projects/mycrs/mycrs-4.jpg" class="project-image">
+            <img src="/images/projects/mycrs/mycrs-5.jpg" class="project-image">
+            <img src="/images/projects/mycrs/mycrs-6.jpg" class="project-image">
+            <img src="/images/projects/mycrs/mycrs-7.jpg" class="project-image">
+            <img src="/images/projects/mycrs/mycrs-8.jpg" class="project-image">
+		
+		</div>
+
+		<hr>
+		<Footer/>
+	</main>
+</Layout>
