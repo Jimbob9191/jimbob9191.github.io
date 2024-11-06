@@ -7,17 +7,22 @@ import Navigation from '../../components/header.astro';
 import '../../styles/global.css';
 
 
+
 const pageTitle = "James MB 👋";
 
 ---
 
 <Layout title= {pageTitle}>
+	
 	<main>
 		<Navigation />
 		<div class="page-header">
 			<h1 class="title">MetaMask Onboarding</h1>
 			<p class="body"><a href="https://metamask.io/">MetaMask</a> is a software cryptocurrency wallet used to interact with the Ethereum blockchain. It allows users to access their Ethereum wallet through a browser extension or mobile app, which can then be used to interact with decentralised applications. In this instance, I will be focussing on the mobile application available on the App Store.</p>
-			<img src="/images/projects/metamask/metamask-alt-cover.png" class="project-image">
+			<div data-lightbox="true">
+				<img src="/images/projects/metamask/metamask-alt-cover.png" class="project-image">
+			</div>
+			
 		</div>
 		<hr>
 
